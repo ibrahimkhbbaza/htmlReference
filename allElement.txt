@@ -1,0 +1,395 @@
+Here you will find all html element : {
+    =================================
+    a{
+        || Type: Inline Self-closing: No ||
+        Creates a link to a URL (
+            a web page,
+            a section within a page,
+            an email address
+        ),
+        attribute (href,target,rel){
+            href(
+                href="https://www.google.com",
+                "/element/div",
+                "#footer",
+                href="mailto:alex@smith.com"
+            ),
+            target(
+                target="_blank",
+                target="_self",
+                target="_parent",
+                target="_top",
+            ),
+            rel(rel="nofollow")
+        }
+    },
+    =================================
+    abbr{
+        || Type: Inline Self-closing: No ||
+        Defines an abbreviation, and usually includes its full description.
+
+        attribute(title){
+            title="HyperText Markup Language"
+        }
+    },
+    =================================
+    address{
+        || Type: Block Self-closing: No ||
+        Defines a block for contact information.
+    },
+    =================================
+    area{
+        || Type: Inline Self-closing: No ||
+        Defines an interactive area within a {map}.
+
+        attribute(title,shape,coords,href,target){
+            title(
+                The title will appear when hovering the area.
+            ),
+            shape(
+                shape="rect", ==> ((A rect requires two pairs x1,y1,x2,y2, where the first one defines the top left corner, and the second one the bottom right corner.))
+                shape="circle", ==> ((A circle requires a pair and a radius x,y,r. The pair defines the center of the circle.))
+                shape="polygon" ==> ((A polygon requires a collection of x,y pairs.))
+            )
+        }
+    },
+    =================================
+    article{
+        || Type: Block Self-closing: No ||
+        Defines a self-contained block of content that can exist in any context.
+        It can have its own header, footer, sections... Useful for a list of blog posts.
+    },
+    =================================
+    aside{
+        || Type: Block Self-closing: No ||
+        Defines a block of content that is related to the main content. Displayed as a sidebar usually.
+    },
+    =================================
+    audio{
+        || Type: block Self-closing: No ||
+        Allows to embed an audio clip into a web page.
+        attribute(src,volume,autoplay,controls,loop,muted,preload){
+            src(
+                src="/assets/Hal.mp3"
+            ),
+            volume(
+                volume="0.0", ==> The track is silent.
+                volume="1.0", ==> The track is set to the loudest.
+            )
+            No value required(
+                autoplay,controls,loop,muted,preload
+            )
+        }
+    },
+    =================================
+    b{
+        || Type: Inline Self-closing: No ||
+        Makes an element bold.
+    },
+    =================================
+    base{
+        ||  Self-closing: Yes ||
+        Defines the base URL for all relative links of a web page. Should be placed in the <head>.
+
+        attribute(href,target){
+            href(
+                href="https://google.com/" ==> this will be in head and the {a} will be like that <a href="/base">The HTML base element</a>
+            ),
+        }
+    },
+    =================================
+    bdi{
+        || Type: Inline Self-closing: No ||
+        Allows to display part of a text in the opposite direction. Stands for bidirectional isolation. ==> used with arabic in other lang
+    },
+    =================================
+    bdo{
+        || Type: Inline Self-closing: No ||
+        Allows to override the direction of text.
+
+        attribute(dir){
+            dir(
+                dir="rtl",
+                dir="ltr"
+            )
+        }
+    },
+    =================================
+    blockquote{
+        || Type: block Self-closing: No ||
+        Defines a long quotation.
+
+        attribute(cite){
+            cite="https://en.wikiquote.org/wiki/Marie_Curie"
+        }
+    },
+    =================================
+    body{
+        || Type: block Self-closing: No ||
+        The container for a web page's content. Must be a direct child of <html>
+    },
+    =================================
+    br{
+        || Type: block Self-closing: Yes ||
+        Defines a line break within a text.
+    },
+    =================================
+    button{
+         || Type: Inline Self-closing: No ||
+         Defines a clickable button.
+
+         attribute(name,value,type){
+             name(
+                name="submit_button" ==> ((It can only contain alphanumeric characters a-z A-Z 0-9 and some special characters like - _… but no space. It allows the server to access each button's value when submitted. )),
+             ),
+             value(
+                 value="primary" ==> The server will receive the value primary.
+             ),
+             type(
+                 type="submit" ==> The button sends the form data to the server,
+                 type="reset" ==> The button resets the form.
+             ),
+             No value required(
+                 disabled,autofocus
+             )
+         }
+    },
+    =================================
+    canvas{
+        || Type: block Self-closing: No ||
+        Defines an element where you can draw graphics.
+
+        attribute(height,width){
+            height="50",
+            width="200"
+        }
+        ==>>> have to some js
+    },
+    =================================
+    caption{
+        || Type: block Self-closing: No ||
+        Defines the title of a <table>.
+    },
+    =================================
+    cite{
+        || Type: Inline Self-closing: No ||
+        Defines the source of a creative work.
+    },
+    =================================
+    code{
+        || Type: Inline Self-closing: No ||
+        Defines a snippet of code within a block of text.
+    },
+    =================================
+    datalist{
+        || Type: block Self-closing: No ||
+        Defines a list of autocomplete options when using a text <input>.
+
+        <input list="countries" placeholder="Type a country">
+        <datalist id="countries">
+            <option value="Argentina">
+            <option value="Bolivia">
+            <option value="Brazil">
+        </datalist>
+    },
+    =================================
+    dd{
+        || Type: Inline Self-closing: No ||
+        Defines an item in a definition list.
+
+        <dl>
+            <dt>Web</dt>
+            <dd>The part of the Internet that contains websites and web pages</dd>
+        </dl>
+    },
+    ===================================================================================================================
+    del{
+        || Type: Inline Self-closing: No ||
+        Defines text that has been deleted.
+
+        attribute(cite,date){
+            cite(
+                cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/acronym" ==> Defines the URL where the reason for the deletion is explained.
+            ),
+            date(
+                datettime="2017-10-14T12:00:00.001-04:00" ==> Defines when the deletion has occured.
+            )
+        }
+    },
+    ====================================================================================================================
+    details{
+        || Type: block Self-closing: No ||
+        Defines a toggable block of content with a summary and additional details
+
+        attribute(open){
+            open="true" ==> Defines whether the additional details are shown by default or not
+        }
+
+        <details>
+            <summary>Read more</summary>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiszing elit. Donec viverra nec nulla vitae mollis.</p>
+        </details>
+
+    },
+    ===================================================================================================================
+    dfn{
+        || Type: Inline Self-closing: No ||
+        Defines where a term is defined within a web page.
+    },
+    ===================================================================================================================
+    dialog{
+        || Type: block Self-closing: No ||
+        Defines a dialog box that can be opened and closed with JavaScript.
+        No value required{
+            open ==> Opens the dialog box by default.  ((by default it used with js to opne and close))
+        }
+    },
+    ===================================================================================================================
+    div{
+        || Type: block Self-closing: No ||
+        Defines a generic block of content, that does not carry any semantic value. Used for layout elements like containers.
+    },
+    ===================================================================================================================
+    em{
+       || Type: block Self-closing: No ||
+       Defines emphasis on text. Is usually rendered as italic text. 
+    },
+    ===================================================================================================================
+    embed{
+        || Type: block Self-closing: Yes ||
+        Defines a container for external application.
+
+        attribute(src,type,height,width){
+            src="https://www.youtube.com/embed/kmk43_2dtn0",
+            type="mp4",
+            height="50",
+            width="150"
+        }
+    },
+    ===================================================================================================================
+    fieldset{
+        || Type: block Self-closing: No ||
+        Defines a group of controls within a form.
+
+        No value required(
+            disabled ==> Disables the controls the fieldset contains
+        )
+        <form action="/subscribe" method="post">
+            <fieldset>
+                <legend>Subscribe to the Newsletter</legend>
+                <input type="email" name="email">
+                <button>Ok</button>
+            </fieldset>
+        </form>
+    },
+    ===================================================================================================================
+    figcaption{
+        || Type: block Self-closing: No ||
+        Defines the caption of a <figure>.
+
+        <figure>
+            <img src="/images/html-reference-logo.png" alt="HTML Reference logo">
+            <figcaption>The HTML Reference logo</figcaption>
+        </figure>
+    },
+    ===================================================================================================================
+    figure{
+        || Type: block Self-closing: No ||
+        Defines a single self-contained element, usually an image.
+
+        <figure>
+            <img src="/images/html-reference-logo.png" alt="HTML Reference logo">
+        </figure>
+    },
+    ===================================================================================================================
+    footer{
+        || Type: block Self-closing: No ||
+        Defines the footer of a web page or section.
+    },
+    ===================================================================================================================
+    form{
+        || Type: block Self-closing: No ||
+        Defines an interactive form with controls.
+
+        <form action="/signup" method="post">
+            ............
+        </form>
+    },
+    ===================================================================================================================
+    h1{
+        || Type: block Self-closing: No ||
+        Defines a section heading of level one: the highest level. it can be to level 6 
+    },
+    ===================================================================================================================
+    head{
+        || Type: block Self-closing: No ||
+        Defines a container for a web page's metadata.
+    },
+    ===================================================================================================================
+    header{
+        || Type: block Self-closing: No ||
+        Defines the header of a web page or section
+    },
+    ===================================================================================================================
+    hgroup{
+        || Type: block Self-closing: No ||
+        Defines the heading of a section. It can only contain heading levels: <h1> <h2> <h3> <h4> <h5> <h6>
+
+        <hgroup>
+            <h1>HTML Reference</h1>
+            <h2>A free guide to all HTML elements and attributes.</h2>
+        </hgroup>
+    },
+    ===================================================================================================================
+    hr{
+        || Self-closing: Yes ||
+        Defines a semantic break between blocks of text. It is often represented as a horizontal rule.
+    },
+    ===================================================================================================================
+    html{
+        || Type: block Self-closing: No ||
+        Defines the root element of an HTML document. All other elements must be contained within this root element.
+    },
+    ===================================================================================================================
+    i{
+        || Type: Inline Self-closing: No ||
+        Makes an element italic.
+    },
+    ===================================================================================================================
+    iframe{
+        || Type: block Self-closing: No ||
+        Defines a container for a nested browsing context: you can include a web page within another web page.
+
+        attribute(src,height,width){
+            src="https://cssreference.io",
+            height="50",
+            width="150"
+        },
+        No value required(
+            Allows the browser to show the iframe in fullscreen with JavaScript.
+        )
+    },
+    ===================================================================================================================
+    img{
+        || Type: Inline Self-closing: Yes ||
+        Defines an image inserted in the web page.
+
+        attribute(src,alt,srcset,sizes,height,width){
+            src(
+                src="/images/tiramisu.jpg" ==> You can use a relative URL,
+                src="https://htmlreference.io/images/traffic.jpg" ==> You can use an absolute URL,
+            ),
+            alt(
+                Alternative text to describe the image if it's not available. ==> Describe the image as if it was not present.
+            ),
+            srcset(
+                //TODO get all information
+                srcset="/images/sunset-@2x.jpg 2x",
+                srcset="/images/sunset-360.jpg 360w, /images/sunset-720.jpg 720w, /images/sunset-1440.jpg 1440w",
+            ),
+            sizes(
+                sizes="(min-width: 800px) 1440px, 720px";
+            ),
+        }
+    }
+}
