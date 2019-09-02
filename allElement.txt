@@ -1,5 +1,5 @@
 Here you will find all html element : {
-    =================================
+    ===================================================================================================================
     a{
         || Type: Inline Self-closing: No ||
         Creates a link to a URL (
@@ -23,7 +23,7 @@ Here you will find all html element : {
             rel(rel="nofollow")
         }
     },
-    =================================
+    ===================================================================================================================
     abbr{
         || Type: Inline Self-closing: No ||
         Defines an abbreviation, and usually includes its full description.
@@ -32,12 +32,12 @@ Here you will find all html element : {
             title="HyperText Markup Language"
         }
     },
-    =================================
+    ===================================================================================================================
     address{
         || Type: Block Self-closing: No ||
         Defines a block for contact information.
     },
-    =================================
+    ===================================================================================================================
     area{
         || Type: Inline Self-closing: No ||
         Defines an interactive area within a {map}.
@@ -53,18 +53,18 @@ Here you will find all html element : {
             )
         }
     },
-    =================================
+    ===================================================================================================================
     article{
         || Type: Block Self-closing: No ||
         Defines a self-contained block of content that can exist in any context.
         It can have its own header, footer, sections... Useful for a list of blog posts.
     },
-    =================================
+    ===================================================================================================================
     aside{
         || Type: Block Self-closing: No ||
         Defines a block of content that is related to the main content. Displayed as a sidebar usually.
     },
-    =================================
+    ===================================================================================================================
     audio{
         || Type: block Self-closing: No ||
         Allows to embed an audio clip into a web page.
@@ -81,12 +81,12 @@ Here you will find all html element : {
             )
         }
     },
-    =================================
+    ===================================================================================================================
     b{
         || Type: Inline Self-closing: No ||
         Makes an element bold.
     },
-    =================================
+    ===================================================================================================================
     base{
         ||  Self-closing: Yes ||
         Defines the base URL for all relative links of a web page. Should be placed in the <head>.
@@ -97,12 +97,12 @@ Here you will find all html element : {
             ),
         }
     },
-    =================================
+    ===================================================================================================================
     bdi{
         || Type: Inline Self-closing: No ||
         Allows to display part of a text in the opposite direction. Stands for bidirectional isolation. ==> used with arabic in other lang
     },
-    =================================
+    ===================================================================================================================
     bdo{
         || Type: Inline Self-closing: No ||
         Allows to override the direction of text.
@@ -114,7 +114,7 @@ Here you will find all html element : {
             )
         }
     },
-    =================================
+    ===================================================================================================================
     blockquote{
         || Type: block Self-closing: No ||
         Defines a long quotation.
@@ -123,17 +123,17 @@ Here you will find all html element : {
             cite="https://en.wikiquote.org/wiki/Marie_Curie"
         }
     },
-    =================================
+    ===================================================================================================================
     body{
         || Type: block Self-closing: No ||
         The container for a web page's content. Must be a direct child of <html>
     },
-    =================================
+    ===================================================================================================================
     br{
         || Type: block Self-closing: Yes ||
         Defines a line break within a text.
     },
-    =================================
+    ===================================================================================================================
     button{
          || Type: Inline Self-closing: No ||
          Defines a clickable button.
@@ -154,7 +154,7 @@ Here you will find all html element : {
              )
          }
     },
-    =================================
+    ===================================================================================================================
     canvas{
         || Type: block Self-closing: No ||
         Defines an element where you can draw graphics.
@@ -165,22 +165,22 @@ Here you will find all html element : {
         }
         ==>>> have to some js
     },
-    =================================
+    ===================================================================================================================
     caption{
         || Type: block Self-closing: No ||
         Defines the title of a <table>.
     },
-    =================================
+    ===================================================================================================================
     cite{
         || Type: Inline Self-closing: No ||
         Defines the source of a creative work.
     },
-    =================================
+    ===================================================================================================================
     code{
         || Type: Inline Self-closing: No ||
         Defines a snippet of code within a block of text.
     },
-    =================================
+    ===================================================================================================================
     datalist{
         || Type: block Self-closing: No ||
         Defines a list of autocomplete options when using a text <input>.
@@ -192,7 +192,7 @@ Here you will find all html element : {
             <option value="Brazil">
         </datalist>
     },
-    =================================
+    ===================================================================================================================
     dd{
         || Type: Inline Self-closing: No ||
         Defines an item in a definition list.
@@ -216,7 +216,7 @@ Here you will find all html element : {
             )
         }
     },
-    ====================================================================================================================
+    ===================================================================================================================
     details{
         || Type: block Self-closing: No ||
         Defines a toggable block of content with a summary and additional details
