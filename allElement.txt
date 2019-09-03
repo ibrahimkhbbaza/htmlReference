@@ -546,9 +546,186 @@ Here you will find all html element : {
     object{
         || Type: block Self-closing: No ||
         Defines a container for external resource
-        //TODO have to flash plyer to run 
+        //TODO have to flash player to run and {param} used in
         attribute(data,type,height,width)
     },
     ===================================================================================================================
-    
+    ol{
+        || Type: block Self-closing: No ||;
+        Defines an ordered list.
+
+        attribute(type,start){
+            type(
+               type="1"==> Uses numbers.
+               type="a" ==> Uses lowercase letters.
+               type="A" ==> Uses uppercase letters.
+               type="i" ==> Uses lowercase Roman numerals.
+               type="I" ==> Uses uppercase Roman numerals
+            ),
+            start(
+                start="3" ==> You can use any integer.
+            ),
+            No value required(reversed){
+                reversed ==> Reverses the order of the list.
+            }
+        }
+    },
+    ===================================================================================================================
+    //TODO optgroup  in a photo 
+    ===================================================================================================================
+    option{
+        || self-closing : no ||
+        Defines an option within a <select> dropdown.
+
+        attribute(value){
+            value="south-africa" ==>  Defines the <select> value if this option is selected.
+        }
+
+        No value required(
+            disabled ==> Disables the option.
+            selected ==> Selects the option when the web page loads.
+        )
+    },
+    ===================================================================================================================
+    output{
+        || Type: Inline Self-closing: No ||
+        Defines the result of a calculation or of user action.
+    //TODO have photo to explain 
+    },
+    ===================================================================================================================
+    p{
+        || Type: block Self-closing: No ||
+        Defines a simple paragraph of text.
+    },
+    ===================================================================================================================
+    //TODO {picture} in a photo
+    ===================================================================================================================
+    pre{
+        || Type: block Self-closing: No ||
+        Defines preformatted text.
+    },
+    ===================================================================================================================
+    progress{
+        || Type: block Self-closing: No ||
+        Defines a progress bar.
+
+        attribute(value,max)
+    },
+    ===================================================================================================================
+    q{
+        || Type: Inline Self-closing: No ||
+        Defines a short quotation.
+    },
+    ===================================================================================================================
+    ruby{
+        || Type: block Self-closing: No ||
+        Defines a ruby annotation to show the pronunciation of East Asian characters.
+
+        used with {rp,rt}
+    },
+    ===================================================================================================================
+    rp{
+       || Type: Inline Self-closing: No ||
+        Defines content displayed when the browser does not support the <ruby> element.
+    },
+    ===================================================================================================================
+    rt{
+       || Type: Inline Self-closing: No ||
+        Defines the pronunciation of ruby annotations.
+        and {rtc} is text container
+    },
+    ===================================================================================================================
+    s{
+        || Type: Inline Self-closing: No ||
+        Defines strikethrough text.
+    },
+    ===================================================================================================================
+    samp{
+        || Type: Inline Self-closing: No ||
+        Defines a sample output from a computer program.
+    },
+    ===================================================================================================================
+    script{
+        || self-closing : no ||
+        Defines a container for an external script.
+
+        attribute(src,type){
+            src="/javascript/my-scripts.js",
+            type="text/javascript"
+        },
+        No value required(async){
+           async ==>  Allows the external script to be loaded asynchronously.
+        }
+    },
+    ===================================================================================================================
+    section{
+        || Type: block Self-closing: No ||
+        Defines a section within a web page.
+    },
+    ===================================================================================================================
+    select{
+        || Type: block Self-closing: No ||
+        Defines a select dropdown with different <option> elements.
+
+        attribute(name,size){
+            name="countries" ==> Defines the unique identifier for that select within the form,
+
+            size="12" ==> When multiple is present too, defines the height of the select list,
+        },
+        No value required(autofocus,disabled,required){
+            autofocus ==> Sets focus on the select when the web page loads.
+            disabled ==> Disables the button.
+            required ==> Tells the browser that this select is required. Leaving it empty will show a warning.
+        }
+    },
+    ===================================================================================================================
+    small{
+        || Type: block Self-closing: No ||
+        Defines small print, for less important content.
+    },
+    ===================================================================================================================
+    span{
+        || Type: block Self-closing: No ||
+        Defines a generic inline container of content, that does not carry any semantic value.
+    },
+    ===================================================================================================================
+    strong{
+        || Type: Inline Self-closing: No ||
+        Defines strong importance on text.
+    },
+    ===================================================================================================================
+    sub{
+        || Type: Inline Self-closing: No ||
+        Defines text that should be displayed lower.
+    },
+    ===================================================================================================================
+    sup{
+        || Type: Inline Self-closing: No ||
+        Defines text that should be displayed higher.
+    },
+    ===================================================================================================================
+    table{
+        || Type: block Self-closing: No ||
+        Defines a container for tabular data.
+    },
+    ===================================================================================================================
+    thead,tbody,tfoot{
+        || Type: block Self-closing: No ||
+        Defines a group of table rows <tr>
+    },
+    ===================================================================================================================
+    title{
+        ||Self-closing: Yes||
+        Defines the title of the web page, displayed on the browser tab.
+    },
+    ===================================================================================================================
+    var{
+        || Type: Inline Self-closing: No ||
+        Defines a variable in a mathematical or programming expression.
+    },
+    ===================================================================================================================
+    wbr{
+        || Type: Inline Self-closing: No ||
+        Defines a location within a block of text where the browser could eventually insert line break.
+    }
 }
