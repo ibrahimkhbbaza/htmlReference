@@ -391,5 +391,164 @@ Here you will find all html element : {
                 sizes="(min-width: 800px) 1440px, 720px";
             ),
         }
-    }
+    },
+    ===================================================================================================================
+    input{
+        || Type: Inline Self-closing: Yes ||
+        Defines an interactive control within a web form.
+
+        attribute(type,name,placeholder){
+            type(
+                type="text" ==> Simple single line text input that accepts any type of character
+
+                type="email" ==> Like a text input,(( but the browser will try to only allow valid email addresses.
+                On mobile devices, the email keyboard will show up.))
+
+                type="number" ==> Like a text input,(( but the browser will try to only allow valid numbers.
+                On mobile devices, the number keyboard will show up.))
+
+                type="checkbox" ==> A toggle checkbox that can only be one of two states: checked or unchecked. 
+                The value is only submitted by the form if the checkbox is checked.
+
+                type="radio" ==> Needs to be used used in (combination => like lable) with other radio buttons,that they are mutually exclusive.
+
+                type="submit" ==> Submit button that is triggered when clicked or when pressing Enter
+            ),
+            name(
+                name="first_name" ==> Defines the unique identifier for that input within the form. 
+                ((It allows the server to access each input's value when submitted))
+            ),
+            placeholder(
+                placeholder="e.g. alex@smith.com" ==> You can hint at the format expected for the input.
+            )
+            No value required(required,disabled){
+                required ==> Tells the browser that this input is required. Leaving it empty will show a warning,
+
+                disabled ==> Disables the input you can make it work with js 
+            }
+        }
+    },
+    ===================================================================================================================
+    ins{
+        || Type: Inline Self-closing: No ||
+        Defines text that has been inserted
+
+        attribute(cite,datettime)
+    },
+    ===================================================================================================================
+    kbd{
+        || Type: Inline Self-closing: No ||
+        Defines a snippet of user input.
+    },
+    ===================================================================================================================
+    lable{
+        //TODO have photo to explain
+        || Type: Inline Self-closing: No ||
+        Defines a label for a form control.
+    },
+    ===================================================================================================================
+    //TODO add legend
+    ===================================================================================================================
+    li{
+        || Self-closing: No ||
+        Defines a list item within an ordered list <ol> or unordered list <ul>.
+    },
+    ===================================================================================================================
+    link{
+        Defines a link between the current web page and an external link or resource.
+        attribute(href,type,rel){
+            href(
+                href="https://htmlreference.io/css/website.css",
+                href="/css/website.css",
+            ),
+            type(
+                type="text/css",
+                type="text/html"
+            ),
+            rel(
+                rel="stylesheet" ,
+                rel="icon",
+                rel="author",
+                rel="next",
+            )
+        }
+    },
+    ===================================================================================================================
+    main{
+        || Type: block Self-closing: No ||
+        Defines the main content of a web page. Can be displayed with a sidebar.
+    },
+    ===================================================================================================================
+    //TODO {map in a photo}
+    ===================================================================================================================
+    mark{
+        || Type: block Self-closing: No ||
+        Defines highlighted text
+    },
+    ===================================================================================================================
+    meta{
+        || self-closing : YES ||
+        Defines metadata attached to a web page.
+
+        attribute(charset,http-equiv,name,content){
+            charset(
+                charset="UTF-8" ==> Defines the character encoding for the whole web page.
+            )
+            http-equiv(
+                http-equiv="Content-Security-Policy" ==> This helps guard against cross-site scripting attacks (XSS) ((not with all browser))
+
+                http-equiv="refresh", ==> Allows to refresh the web page every N seconds, or even redirect to another URL.
+
+                http-equiv="X-UA-Compatible", ==> Defines which Internet Explorer verison the web page should be rendered as.
+            ),
+            name(
+                name="viewport" ==> Defines dimension and scaling rules for the viewport.
+                name="theme-color" ==> Defines a theme color which can be used by the browser or the operating system.
+            ),
+            content(
+                content="width=device-width, initial-scale=1" , ((for viewport))
+                content="2; url=https://cssreference.io" , ((for refresh or redirect))
+            )
+        }
+    },
+    ===================================================================================================================
+    meter{
+        || Type: block Self-closing: No ||
+        Defines a horizontal meter.
+
+        attribute(value,max,min,low,high){
+            value(
+                value="0.7" , ==> You can use decimal and negative numbers. It must be between the min and max values.
+                value="-42", ==> If you use a value that is lower than the minimum, the meter will be empty.
+                value="63" ==> If you use a value that is higher than the maximum, the meter will be full.
+            )
+            low(
+                low="0.16" ==> The value must be higher than min and lower than high.
+            )
+            high(
+                high="0.92" ==> The value must be lower than max and higher than low.
+            )
+        }
+    },
+    ===================================================================================================================
+    nav{
+        || Type: block Self-closing: No ||
+        Defines a section with navigation links.
+    },
+    ===================================================================================================================
+    //TODO frameset and noframe and frameset
+    ===================================================================================================================
+    noscript{
+        || Type: block Self-closing: No ||
+        Defines content displayed when the browser does not have JavaScript enabled.
+    },
+    ===================================================================================================================
+    object{
+        || Type: block Self-closing: No ||
+        Defines a container for external resource
+        //TODO have to flash plyer to run 
+        attribute(data,type,height,width)
+    },
+    ===================================================================================================================
+    
 }
